@@ -1,5 +1,15 @@
 require 'spec_helper'
 
 describe Micropost do
-  # pending "add some examples to (or delete) #{__FILE__}"
+  before do
+    user = User.create(name: "Example User", email: "user@example.com")
+    @micropost = user.microposts.build(content: "Lorem ipsum")
+  end
+
+  subject { @micropost }
+
+  it { should respond_to(:content) }
+  it { should respond_to(:user_id) }
+
+  it { should be_valid }
 end
