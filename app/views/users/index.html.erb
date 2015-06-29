@@ -16,9 +16,9 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('link.Show'), user %></td>
+        <td><%= link_to t('link.Edit'), edit_user_path(user) %></td>
+        <td><%= link_to t('link.Destroy'), user, method: :delete, data: { confirm: t('messages.are_you_sure') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to t('link.New', model: User.model_name.human), new_user_path %>
