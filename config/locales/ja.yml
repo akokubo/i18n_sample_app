@@ -10,3 +10,9 @@ ja:
       micropost:
         content: 本文
         user_id: ユーザーID
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              invalid_format: は不正な形式です。
