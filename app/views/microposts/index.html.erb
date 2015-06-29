@@ -17,7 +17,7 @@
       <tr>
         <td><%= micropost.content %></td>
         <td><%= micropost.user_id %></td>
-        <td><%= micropost.posted_at %></td>
+        <td><%= l(micropost.posted_at, format: :default) if micropost.posted_at %></td>
         <td><%= link_to t('link.Show'), micropost %></td>
         <td><%= link_to t('link.Edit'), edit_micropost_path(micropost) %></td>
         <td><%= link_to t('link.Destroy'), micropost, method: :delete, data: { confirm: t('messages.are_you_sure') } %></td>

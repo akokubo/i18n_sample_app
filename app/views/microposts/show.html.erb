@@ -12,7 +12,7 @@
 
 <p>
   <strong><%= Micropost.human_attribute_name(:posted_at) %>:</strong>
-  <%= @micropost.posted_at %>
+  <%= l(@micropost.posted_at, format: :default) if @micropost.posted_at %>
 </p>
 
 <%= link_to t('link.Edit'), edit_micropost_path(@micropost) %> |
