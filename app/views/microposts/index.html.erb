@@ -5,6 +5,7 @@
     <tr>
       <th><%= Micropost.human_attribute_name(:content) %></th>
       <th><%= Micropost.human_attribute_name(:user_id) %></th>
+      <th><%= Micropost.human_attribute_name(:posted_at) %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= micropost.content %></td>
         <td><%= micropost.user_id %></td>
+        <td><%= micropost.posted_at %></td>
         <td><%= link_to t('link.Show'), micropost %></td>
         <td><%= link_to t('link.Edit'), edit_micropost_path(micropost) %></td>
         <td><%= link_to t('link.Destroy'), micropost, method: :delete, data: { confirm: t('messages.are_you_sure') } %></td>

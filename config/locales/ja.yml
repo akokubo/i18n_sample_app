@@ -10,6 +10,7 @@ ja:
       micropost:
         content: 本文
         user_id: ユーザーID
+        posted_at: 投稿日時
     errors:
       models:
         user:
