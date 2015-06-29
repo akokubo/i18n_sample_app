@@ -16,3 +16,17 @@ ja:
           attributes:
             email:
               invalid_format: は不正な形式です。
+  users:
+    index:
+      title: ユーザーの一覧
+    new:
+      title: ユーザーの新規作成
+    edit:
+      title: '%{user}の情報を編集'
+  microposts:
+    index:
+      title: つぶやきの一覧
+    new:
+      title: つぶやきの新規作成
+    edit:
+      title: つぶやきの情報を編集
