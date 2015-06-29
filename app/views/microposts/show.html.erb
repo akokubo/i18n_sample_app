@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Content:</strong>
+  <strong><%= Micropost.human_attribute_name(:content) %>:</strong>
   <%= @micropost.content %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong><%= Micropost.human_attribute_name(:user_id) %>:</strong>
   <%= @micropost.user_id %>
 </p>
 
